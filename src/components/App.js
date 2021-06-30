@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Router, Route } from 'react-router-dom';
+import { Router, Route, Switch } from 'react-router-dom';
 import StreamList from './streams/StreamList';
 import StreamShow from './streams/StreamShow';
 import StreamEdit from './streams/StreamEdit';
@@ -18,11 +18,13 @@ const App = () => {
       <Router history={history}>
         <div>
           <Header />
-          <Route path="/" exact component={StreamList} />
-          <Route path="/streams/:id" exact component={StreamShow} />
-          <Route path="/streams/edit/:id" exact component={StreamEdit} />
-          <Route path="/streams/new" component={StreamCreate} />
-          <Route path="/streams/delete/:id" component={StreamDelete} />
+          <Switch>
+            <Route path="/" exact component={StreamList} />
+            <Route path="/streams/:id" exact component={StreamShow} />
+            <Route path="/streams/edit/:id" exact component={StreamEdit} />
+            <Route path="/streams/new" component={StreamCreate} />
+            <Route path="/streams/delete/:id" component={StreamDelete} />
+          </Switch>
         </div>
       </Router>
     </div>
