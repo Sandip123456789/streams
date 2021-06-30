@@ -1,7 +1,9 @@
 import React from 'react';
 
-const StreamShow = () => {
-  return <div>StreamShow</div>;
-};
+class StreamShow extends React.Component {
+  render() {
+    return <div>StreamShow</div>;
+  }
+}
 
 export default StreamShow;
