@@ -10,9 +10,9 @@ import history from '../history';
 
 //#41B3A3
 const App = () => {
-  useEffect(() => {
-    document.body.style.backgroundColor = '#1A1A1D';
-  });
+  // useEffect(() => {
+  //   document.body.style.backgroundColor = '#1A1A1D';
+  // });
   return (
     <div className="ui container">
       <Router history={history}>

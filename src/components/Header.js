@@ -3,8 +3,9 @@ import { Link } from 'react-router-dom';
 import GoogleAuth from './GoogleAuth';
 
 const Header = () => {
+  // inverted
   return (
-    <div className="ui inverted secondary pointing menu">
+    <div className="ui secondary pointing menu">
       <Link to="/" className="active item">
         Streamer
       </Link>
